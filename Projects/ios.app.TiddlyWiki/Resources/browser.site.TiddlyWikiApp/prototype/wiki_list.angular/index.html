@@ -1,0 +1,35 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="TiddlyWikiServer">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- vvv common libs -->
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="../../typescript.lib.json_broker/lib.json_broker.js"></script>
+    <script src="../../typescript.lib.json_broker/angular1.js"></script>
+    <!-- ^^^ common libs -->
+
+    <!-- vvv app libs -->
+    <script src="../../ts/service.js"></script>
+    <!-- ^^^ app libs -->
+
+    <script src="index.js"></script>
+
+</head>
+<body>
+
+
+<div ng-controller="index">
+
+    {{variable}}
+    <br>
+
+    <button ng-click="viewController.ping()">
+        <h3>Open TiddlyWiki</h3>
+    </button>
+
+</div>
+
+</body>
+</html>

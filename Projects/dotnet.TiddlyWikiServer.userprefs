@@ -1,0 +1,10 @@
+﻿<Properties StartupConfiguration="{22D8FD7D-E00D-42FC-AB2E-00963BC78E39}|Default">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.ItemProperties.dotnet.app.TiddlyWikiServer PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ios.app.TiddlyWiki PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FEE9BFEC-54CC-45A9-98BE-64F06E7DB787" />
+</Properties>

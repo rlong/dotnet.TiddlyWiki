@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{E00102A7-A4DE-4B05-A832-A32FDCA9D79C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>dotnet.app.TddlyWikiServer</RootNamespace>
+    <AssemblyName>dotnet.app.TddlyWikiServer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.4.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="..\dotnet.lib.TiddlyWikiServer\dotnet.lib.TiddlyWikiServer.projitems" Label="Shared" Condition="Exists('..\dotnet.lib.TiddlyWikiServer\dotnet.lib.TiddlyWikiServer.projitems')" />
+  <Import Project="..\dotnet.lib.CoreAnnex\dotnet.lib.CoreAnnex.projitems" Label="Shared" Condition="Exists('..\dotnet.lib.CoreAnnex\dotnet.lib.CoreAnnex.projitems')" />
+  <Import Project="..\dotnet.lib.HttpLibrary\dotnet.lib.HttpLibrary.projitems" Label="Shared" Condition="Exists('..\dotnet.lib.HttpLibrary\dotnet.lib.HttpLibrary.projitems')" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

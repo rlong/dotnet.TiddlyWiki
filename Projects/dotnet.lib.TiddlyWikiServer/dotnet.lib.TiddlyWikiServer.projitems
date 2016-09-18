@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{06DC2CDB-0928-47C9-B74B-8C1EE550C1F8}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>dotnet.lib.TiddlyWikiServer</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ITiddlyWikiService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TiddlyWikiMultiPartHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TiddlyWikiPartHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TiddlyWikiRequestHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TiddlyWikiServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TiddlyWikiService.cs" />
+  </ItemGroup>
+</Project>
